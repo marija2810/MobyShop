@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Mobi Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+
+    <script src="scripts/js/jquery-2.11.min.js"></script>
+    <script src="scripts/js/jquery.flexslider-min.js"></script>
+    <script src="scripts/js/lightbox.js"></script>
+    <script src="scripts/js/main.js"></script>
+
+</head>
+<body class="ponuda">
+<header>
+    <div class="container">
+        <div class="row">
+                <ul class="navigacija">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ponuda.html">Ponuda</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="slika">
+        <img src="./img/o-nama.jpg" alt="">
+    </div>
+    <div class="o-nama">
+        <div class="container">
+            <div class="text-wrappper">
+                <h2>15 Godina iskustva</h2>
+                <p>Uvek na pravom mestu. Vise od 15 godina iskustva potvrdjuje kvalitet koji posedujemo.</p>
+            </div>
+        </div>
+        <div class="container galerija">
+                <div class="itemGalerija-1">
+                    <a href="img/galerija-1.jpg" data-lightbox="mobilni">
+                        <img src="./img/galerija-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="itemGalerija-2">
+                    <a href="img/galerija-2.jpg" data-lightbox="mobilni">
+                        <img src="./img/galerija-2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="itemGalerija-3">
+                    <a href="img/galerija-3.jpg" data-lightbox="mobilni">
+                        <img src="./img/galerija-3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="itemGalerija-4">
+                    <a href="img/galerija-4.jpg" data-lightbox="mobilni">
+                        <img src="./img/galerija-4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="itemGalerija-5">
+                    <a href="img/galerija-5.jpg" data-lightbox="mobilni">
+                        <img src="./img/galerija-5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="itemGalerija-6">
+                    <a href="img/galerija-6.jpg" data-lightbox="mobilni">
+                        <img src="./img/galerija-6.jpg" alt="">
+                    </a>
+                </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                    <div id="srecni-broj"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+                <button class="btn btn-info" onclick="document.getElementById('date').innerHTML=Date()">Pogledajte
+                    trenutno vreme
+                </button>
+                <p id="date"></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

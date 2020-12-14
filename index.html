@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Mobi Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+
+    <script src="scripts/js/jquery-2.11.min.js"></script>
+    <script src="scripts/js/jquery.flexslider-min.js"></script>
+    <script src="scripts/js/lightbox.js"></script>
+    <script src="scripts/js/main.js"></script>
+
+</head>
+
+<body class="home">
+    <header>
+        <div class="container">
+            <div class="row">
+                <ul class="navigacija">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ponuda.html">Ponuda</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="./img/slider-image-1.jpg" />
+                </li>
+                <li>
+                    <img src="./img/slider-image-2.jpg" />
+                </li>
+                <li>
+                    <img src="./img/slider-image-3.jpg" />
+                </li>
+            </ul>
+        </div>
+        <div class="row" style="justify-content: center;">
+            <h1>Ponuda Telefona</h1>
+        </div>
+        <div class="ponuda">
+            <div class="containerIndex">
+
+                <div class="item-1">
+                    <img src="./img/note9.jpg" alt="">
+                    <h3>Samsung Galaxy Note 9</h3>
+                    <p>Quad HD Super Amoled, Dual edge/6.4 inča/12 MP/ Dvostruka kamera sa Dual OIS/Android</p>
+                    <a class="btn btn-primary" href="ponuda.html">Pogledaj Ponudu</a>
+                </div>
+
+                <div class="item-2">
+                    <img src="./img/p20.jpg" alt="">
+                    <h3>Huawei P20 pro</h3>
+                    <p>5.8 inča/Dual camera 12 MP + 20 MP/Android/8.1</p>
+                    <a class="btn btn-primary" href="ponuda.html">Pogledaj Ponudu</a>
+                </div>
+
+
+                <div class="item-3">
+                    <img src="./img/j6.jpg" alt="">
+                    <h3>Samsung Galaxy J6</h3>
+                    <p>Super AMOLED/5.6 inča/13 MP/Android</p>
+                    <a class="btn btn-primary" href="ponuda.html">Pogledaj Ponudu</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="containerIndex">
+            <div class="row">
+
+                <button class="btn btn-info" onclick="document.getElementById('date').innerHTML=Date()">Pogledajte
+                    trenutno vreme</button>
+                <p id="date"></p>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

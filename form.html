@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Mobi Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+
+    <script src="scripts/js/jquery-2.11.min.js"></script>
+    <script src="scripts/js/jquery.flexslider-min.js"></script>
+    <script src="scripts/js/lightbox.js"></script>
+    <script src="scripts/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"
+        type="text/javascript"></script>
+
+
+</head>
+
+<body class="ponuda">
+    <header>
+        <div class="container">
+            <div class="row">
+                <ul class="navigacija">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ponuda.html">Ponuda</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slika">
+            <img src="./img/top-slika.jpg" alt="">
+        </div>
+        <div class="ponuda">
+            <div class="containerPonuda">
+
+                <!-- Modal content-->
+
+                <form id="form">
+                    <div class="contactForm">
+                        <div class="itemForm">
+                            <h2>Register</h2>
+                            <input type="text" id="name" name="ime" required placeholder="Unesite ime">
+                            <br>
+                            <label class="radio-inline">Pol:
+                                <input type="radio" name="optradio" checked> Musko
+                                <input type="radio" name="optradio"> Zensko
+                            </label>
+                            <br>
+                            <input type="text" id="adress" name="adresa" required placeholder="Unesite email">
+                            <br>
+                            <input type="text" id="tel" name="tel" pattern="[0-9]+" required
+                                placeholder="Unesite broj telefona">
+                            <br>
+                            <button style="width: 100px;" class="button" type="submit">Posalji</button>
+                            <br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript">
+            $.validator.addMethod("regex",
+                function (value, element, regexp) {
+                    var re = new RegExp(regexp);
+                    return this.optional(element) || re.test(value);
+                }, "Unesite Vas validan broj telefona!"
+            );
+            $('#form').validate({
+                rules: {
+                    ime: {
+                        required: true,
+                        minlength: 3
+                    },
+                    adresa: {
+                        required: true,
+                        email: true
+                    },
+                    tel: {
+                        required: true,
+                        regex: "[0-9]" // As RegExp 		
+                    }
+                },
+                messages: {
+                    ime: {
+                        required: "Unesite Vase ime!",
+                        minlength: "Ime mora da ima bar 3 karaktera!"
+                    },
+                    adresa: {
+                        required: "Unesite Vas email!",
+                        email: "E-mail mora biti validan!"
+                    },
+                    tel: {
+                        required: "Unesite Vas broj telefona!",
+                    }
+                }
+            });
+        </script>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <button class="btn btn-info" onclick="document.getElementById('date').innerHTML=Date()">Pogledajte
+                    trenutno vreme
+                </button>
+                <p id="date"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
